@@ -2,16 +2,11 @@
 name = "openapi"
 version = "1.1.0"
 authors = ["OpenAPI Generator team and contributors"]
+edition = "2018"
 
 [dependencies]
+reqwest = { version = "^0.11", default-features = false, features = ["json","multipart"] }
 serde = "^1.0"
 serde_derive = "^1.0"
 serde_json = "^1.0"
 url = "1.5"
-hyper = "0.13.10"
-serde_yaml = "0.8"
-base64 = "~0.7.0"
-futures = "0.1.23"
-
-[dev-dependencies]
-tokio-core = "*"
